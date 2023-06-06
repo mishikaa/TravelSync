@@ -1,0 +1,68 @@
+.modal-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2rem 3rem 4rem 3rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header h2 {
+    text-transform: uppercase;
+}
+
+.close-icon {
+    width: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.group-icon {
+    width:35px;
+}
+
+.modal-form {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.modal-form input {
+    outline: none;
+    width: 100%;
+    border: 1px solid #d8e2dc;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-size: 16px;
+}
+
+.modal-form input:focus {
+    border-color: #a6a2a2;
+}
+
+.create-btn {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #80669d;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.selected-users {
+    display: flex;
+    gap: 0.25rem;
+}
+

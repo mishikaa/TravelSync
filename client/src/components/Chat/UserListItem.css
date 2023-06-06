@@ -1,0 +1,98 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+
+.firstinfo {
+    display: flex;
+    align-items: center;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+}
+
+.contact-card {
+    padding: 1.25rem 0.75rem;
+    border-radius: 5px;
+    background-color: inherit;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin: 0.2rem 0;
+}
+
+.contact-card:after {
+    content: '';
+    display: block;
+    width: 13.5rem;
+    height: 20rem;
+    background: #654ea3;
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    position: absolute;
+    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+}
+
+.contact-card:hover {
+        cursor: pointer;
+        background:rgba(185, 37, 37, 0.2);
+}
+
+.firstinfo {
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+}
+
+.firstinfo .profileinfo {
+    padding: 0 1.25rem;
+}
+
+
+.firstinfo .profileinfo h4 {
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -500px;  /* Coming from bottom of the page */
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+
+    100% {
+        transform: rotate(-28deg);
+        top: -24px;
+        left: -78px;
+    }
+}

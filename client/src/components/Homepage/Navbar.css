@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    padding: 5px 15px;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.brand {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand .logo {
+    width: 40px;
+    height: 40px;
+}
+
+.brand .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.options {
+    margin-right: 1rem;
+    display: flex;
+    gap: 20px;
+}
+
+.auth-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 5rem;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    background: #C9D6FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

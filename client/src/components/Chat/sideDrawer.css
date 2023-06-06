@@ -1,0 +1,12 @@
+.side-drawer {
+    background-color: #2f2235;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%;
+}
+
+.no-result {
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+.text-center {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: -40px 0 60px 0;
+    display: block;
+    text-align: center;
+}
+
+.box {
+    height: 35rem;
+    background-color: rgba(0, 0, 0, 0.89);
+    border-radius: 3px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    padding: 8px 0 5px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e74c3c;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 12px;
+}
+
+.required {
+    color: #e74c3c;
+}
+.btn {
+    color: #fff;
+    background-color: #e74c3c;
+    outline: none;
+    border: 0;
+    color: #fff;
+    width: 400px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.login, .signup{
+    background-color: #3b7fa1;
+}
+.guestLogin {
+    background-color: #e74c3c;
+}
+span{
+    color: #fff;
+}
+a {
+    color: green;
+    cursor: pointer;
+}
+
+.visibility {
+    width: 18px;
+    position: absolute;
+    right: 1px;
+    cursor: pointer;
+}
+
+.spinner {
+    width: 18px;
+    position: relative;
+    top: 5px;
+    right: 4px;
+}

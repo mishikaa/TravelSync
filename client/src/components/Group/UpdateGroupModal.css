@@ -1,0 +1,52 @@
+.edit-icon {
+    width: 1.5rem;
+    padding: 7.5px;
+    margin: 5px;
+}
+
+.edit-icon:hover {
+    background-color: #8ff1dc;
+    border-radius: 30%;
+}
+
+.edit-label {
+    display: none;
+    color: black;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    border-radius: 4px;
+    background-color: #8ff1dc;
+}
+
+.edit-icon:hover+.edit-label {
+    display: inline;
+}
+
+.rename-tab {
+    display: flex;
+    gap: 0;
+}
+
+.group-modal-form input {
+    outline: none;
+    width: 86%;
+    border: 1px solid #d8e2dc;
+    border-radius: 4px 0 0 4px;
+    padding: 14px 20px;
+    font-size: 16px;
+}
+
+.group-modal-form input:focus {
+    border-color: #a6a2a2;
+}
+
+.update-btn {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #8ff1dc;
+}

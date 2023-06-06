@@ -1,0 +1,17 @@
+.message {
+    display: flex;
+}
+
+.messageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: black;
+    padding: 5px 15px;
+    max-width: 75%;
+}
+
+.message-box{
+    height: 70vh;
+}
