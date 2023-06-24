@@ -3,6 +3,8 @@ import './auth.css'
 import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import {errorPopup, successPopup} from '../popup'; //for popup messages
+import {motion} from 'framer-motion';
+
 
 const Login = (props) => {
   const [show, setShow] = useState(false) //for password
@@ -99,15 +101,23 @@ const Login = (props) => {
             </label>		
             <img className="visibility" onClick={toggleShow} src={show ? "../assets/visibility/not-visible.png" : "../assets/visibility/visible.png"} alt="visibility_icon" />
         </div>
-        <button 
+        <motion.button 
+          whileHover={{
+             scale: 1.01,
+             textShadow: "0px 0px 8px rgb(255,255,255)"
+          }}
           className="btn login" 
           onClick={submitHandler}
           disabled={isLoading}
         >
           {isLoading && <img className='spinner' src='../assets/spinner.gif' alt="spinner"></img>}
           Login
-        </button>
-        <button 
+        </motion.button>
+        <motion.button 
+          whileHover={{
+           scale: 1.01,
+           textShadow: "0px 0px 8px rgb(255,255,255)"
+          }}
           className="btn guestLogin"
           onClick={(event) => {
             event.preventDefault()
@@ -119,7 +129,7 @@ const Login = (props) => {
           disabled={isLoading}
         >
           Get Guest User Credentials
-        </button>
+        </motion.button>
         <div>
           <span>Don't have an account? <a onClick={props.handleClick}>Signup</a></span>
         </div>

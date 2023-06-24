@@ -22,7 +22,7 @@ const styles = {
 }
 
 export const ChatHeader = ({fetchMessages}) => {
-    const {user, selectedChat, setSelectedChat} = ChatState()
+    const {user, selectedChat} = ChatState()
 
     return (
     <div style={styles.container}>
@@ -32,7 +32,7 @@ export const ChatHeader = ({fetchMessages}) => {
                     <h3 style={styles.title} className='sender'>
                         {getSender(user, selectedChat.users).username}
                     </h3>
-                    <Profile_Menu style={styles.profile} sender={getSender(user, selectedChat.users)}/>
+                    {/* <Profile_Menu style={styles.profile} sender={getSender(user, selectedChat.users)}/> */}
                 </>
              :
                 <h3 style={styles.title}>{selectedChat.chatName}</h3>

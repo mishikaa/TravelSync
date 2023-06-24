@@ -13,7 +13,7 @@ const AuthPage = () => {
         const user = JSON.parse(localStorage.getItem('userInfo'))
 
         if (user) {
-            navigate('/chats')
+            navigate('/')
         } 
     }, [navigate]) //whenever navigate changes it's gonna run again
 

@@ -4,7 +4,6 @@ import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import {errorPopup, successPopup} from '../popup'; //for popup messages
 
-
 const Signup = (props) => {
   const [show, setShow] = useState(false)
   const [formData, setFormData] = useState({
@@ -14,6 +13,7 @@ const Signup = (props) => {
     confirmPassword: '',
     profilePic: ''
   })  
+  
   const [isLoading, setLoading] = useState(false)
   const navigate = useNavigate() 
   
@@ -68,7 +68,7 @@ const Signup = (props) => {
       
       localStorage.setItem('userInfo', JSON.stringify(data)) // Saving the user's info in the local storage
       setLoading(false)
-      navigate('/chats') // Navigate to the /chats page
+      navigate('/home') // Navigate to the /home page
       }
     catch(error) {
       errorPopup(`Error Occured! ${error.response.data.message}`)

@@ -2,12 +2,10 @@ import {PopupMenu} from 'react-simple-widgets'
 import Profile_Details from './Profile_Details';
 import AvatarIcon from './Avatar';
 import { ChatState } from '../../Context_API/chatProvider';
-import { useState } from 'react';
 
 
 const Profile_Menu = ({sender}) => {
     const {user} = ChatState()
-    const [showPopup, setShowPopup] = useState(false)
 
     return (
     <>  
@@ -26,7 +24,6 @@ const Profile_Menu = ({sender}) => {
             :
             <Profile_Details closePopup={closePopup}/>
         )}
-        
       </PopupMenu>
       
     </>

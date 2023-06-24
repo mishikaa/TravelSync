@@ -18,7 +18,7 @@ const ChatProvider = ({children}) => {
         setUser(userInfo)
 
         if(!user) {
-            navigate('/')
+            navigate('/auth')
         }
     }, [navigate]) //whenever navigate changes it's gonna run again
     

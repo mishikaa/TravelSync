@@ -10,8 +10,8 @@ const Header = () => {
           TravelSync
         </h2>
         <div className='action'>
-          <Notification_Menu />
-          <Profile_Menu />
+          {/* <Notification_Menu /> */}
+          {/* <Profile_Menu /> */}
         </div>
       </header>
     )

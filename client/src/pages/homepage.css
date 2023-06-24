@@ -1,0 +1,27 @@
+.homepage {
+    width: 100%;
+    background-image: url('../../public/assets/homepageBg.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+.text  {
+    text-align: center;
+    padding: 2.5rem;
+}
+.text h2{
+    margin-bottom: 40px;
+}
+
+.mainbox .text .about {
+    font-size: 1.25rem;
+}
